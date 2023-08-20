@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.App button {
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.App .btn {
+  width: auto;
+}
