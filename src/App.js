@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import Ref from './components/Ref';
 
 function App() {
   const [count, setСount] = useState(0);
@@ -25,7 +26,7 @@ function App() {
     localStorage.setItem('timer', count);
 
     const userCount = localStorage.getItem('timer');
-    console.log(userCount);
+    //console.log(userCount);
     if (userCount) {
       setСount(+userCount);
     }
@@ -39,6 +40,7 @@ function App() {
       </button>
       {count}
       <button onClick={resetTimer}>Reset</button>
+      <Ref />
     </div>
   );
 }
